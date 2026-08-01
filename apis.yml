@@ -1,8 +1,28 @@
 aid: secondmeasure
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/secondmeasure.png
 name: Secondmeasure
-description: 'Secondmeasure is a company surfaced as a portfolio company of norwest-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Bloomberg Second Measure is an alternative-data analytics provider that
+  turns billions of anonymized U.S. consumer transaction records into daily company-
+  and sector-level performance signals for investors and corporate strategy teams.
+  It tracks thousands of public and private companies with 8+ years of transaction
+  history, offering configurable lag options (2-day, 3-day, 7-day) from card swipe.
+  Following its acquisition by Bloomberg, its analytics and transaction-level data
+  feeds are delivered primarily through the Bloomberg Terminal (ALTD <GO> and ECAN
+  <GO>) and enterprise data feeds rather than a public self-serve developer API. It
+  was surfaced as a portfolio company of Norwest Venture Partners and added to the
+  API Evangelist network for enrichment; no public API surface was found on the
+  provider''s site as of this pass.'
 url: https://raw.githubusercontent.com/api-evangelist/secondmeasure/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Unknown
+- Alternative Data
+- Consumer Transaction Data
+- Analytics
+- Financial Data
+- Market Research
+- Investment Research
+- Bloomberg
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/secondmeasure-domain-security.yml
 - type: Website
   url: https://secondmeasure.com
+- type: Blog
+  url: https://secondmeasure.com/datapoints/
+- type: PrivacyPolicy
+  url: https://secondmeasure.com/privacy-policy/
+- type: TermsOfService
+  url: https://secondmeasure.com/tos/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
